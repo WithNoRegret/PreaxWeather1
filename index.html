@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang='ru'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport'
+    content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <title>Weather App</title>
+  <!-- Сторонний сброс стилей -->
+  <link rel="stylesheet" href="src/styles/reset.css">
+  <!-- Мои глобальные стили -->
+  <link rel="stylesheet" href="src/styles/globals.css">
+  <!-- Мои стили для текущей страницы -->
+  <link rel="stylesheet" href="src/styles/styles.css">
+</head>
+
+<body>
+  <div class="app-container">
+    <header class="header">
+      <a href="#" class="header__logo">
+        <img src="public/logo.svg" alt="WeatherApp" class="header__logo-image">
+      </a>
+      <div class="header__search">
+        <form class="header__search-form" id="city-search-form">
+          <input type="text" class="header__search-input" placeholder="Поиск по городу" name="search-city"
+            id="city-search-input" value="" autocomplete="off" />
+          <button type="submit" class="header__search-button" id="city-search-button"></button>
+        </form>
+      </div>
+    </header>
+    <main class="main">
+      <section class="today">
+        <div class="today__info">
+          <div class="location-date-time">
+            <h2 class="location">Москва</h2>
+            <p class="date">Суббота, 06 января</p>
+            <p class="time">11:29</p>
+          </div>
+          <p class="temperature">-7°</p>
+          <div class="other">
+            <p class="weather">Облачно</p>
+            <p class="feeling">Ощущается как -11°</p>
+          </div>
+        </div>
+        <div class="today__details">
+          <ul class="today__details-list">
+            <li class="today__details-card details-card">
+              <div class="details-card__values">
+                <h3 class="details-card__title">Влажность</h3>
+                <img src="public/icons/details/humidity.svg" alt="Влажность" class="details-card__icon">
+                <p class="details-card__value">75 %</p>
+              </div>
+              <div class="details-card__bar">
+                <svg width="126" height="8" viewBox="0 0 126 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M83.4727 8C84.4228 6.93849 85.0005 5.53671 85.0005 4C85.0005 2.46329 84.4228 1.06151 83.4727 0H122C124.209 0 126 1.79086 126 4C126 6.20914 124.209 8 122 8H83.4727ZM74.5283 8H4C1.79086 8 0 6.20914 0 4C0 1.79086 1.79086 0 4 0H74.5283C73.5782 1.06151 73.0005 2.46329 73.0005 4C73.0005 5.53671 73.5782 6.93849 74.5283 8Z"
+                    fill="#DADADA" fill-opacity="0.4" />
+                  <circle cx="79" cy="4" r="4" fill="#F5F4F4" />
+                </svg>
+                <p class="details-card__bar-description">
+                  <span>0%</span> <span>100%</span>
+                </p>
+              </div>
+            </li>
+            <li class="today__details-card details-card">
+              <div class="details-card__values">
+                <h3 class="details-card__title">Давление</h3>
+                <img src="public/icons/details/barometr.svg" alt="Давление" class="details-card__icon">
+                <p class="details-card__value">761</p>
+              </div>
+              <div class="details-card__bar">
+                <svg width="126" height="8" viewBox="0 0 126 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M100.472 8C101.422 6.93849 102 5.53671 102 4C102 2.46329 101.422 1.06151 100.472 0H122C124.209 0 126 1.79086 126 4C126 6.20914 124.209 8 122 8H100.472ZM91.5278 8H4C1.79086 8 0 6.20914 0 4C0 1.79086 1.79086 0 4 0H91.5278C90.5777 1.06151 90 2.46329 90 4C90 5.53671 90.5777 6.93849 91.5278 8Z"
+                    fill="url(#paint0_radial_2001_187)" />
+                  <circle cx="95.9995" cy="4" r="4" fill="#F5F4F4" />
+                  <defs>
+                    <radialGradient id="paint0_radial_2001_187" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                      gradientTransform="translate(63 3.99995) scale(63 756.25)">
+                      <stop stop-color="#545454" stop-opacity="0.4" />
+                      <stop offset="0.451233" stop-color="#8A8A8A" stop-opacity="0.4" />
+                      <stop offset="1" stop-color="#DADADA" />
+                      <stop offset="1" stop-color="#DADADA" stop-opacity="0.4" />
+                    </radialGradient>
+                  </defs>
+                </svg>
+                <p class="details-card__bar-description">
+                  Повышенное
+                </p>
+              </div>
+            </li>
+            <li class="today__details-card details-card">
+              <div class="details-card__values">
+                <h3 class="details-card__title">Видимость</h3>
+                <img src="public/icons/details/visibility.svg" alt="Видимость" class="details-card__icon">
+                <p class="details-card__value">28 км</p>
+              </div>
+              <div class="details-card__bar">
+                <svg width="126" height="8" viewBox="0 0 126 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M35.4727 8C36.4228 6.93849 37.0005 5.53671 37.0005 4C37.0005 2.46329 36.4228 1.06151 35.4727 0H122C124.209 0 126 1.79086 126 4C126 6.20914 124.209 8 122 8H35.4727ZM26.5283 8H4C1.79086 8 0 6.20914 0 4C0 1.79086 1.79086 0 4 0H26.5283C25.5782 1.06151 25.0005 2.46329 25.0005 4C25.0005 5.53671 25.5782 6.93849 26.5283 8Z"
+                    fill="#DADADA" fill-opacity="0.4" />
+                  <circle cx="31" cy="4" r="4" fill="#F5F4F4" />
+                </svg>
+                <p class="details-card__bar-description">
+                  Нормальная
+                </p>
+              </div>
+            </li>
+            <li class="today__details-card details-card">
+              <div class="details-card__values">
+                <h3 class="details-card__title">Рассвет</h3>
+                <img src="public/icons/details/sunrise.svg" alt="Рассвет" class="details-card__icon">
+                <p class="details-card__value">8:42</p>
+              </div>
+              <div class="details-card__bar">
+                <p class="details-card__bar-description">
+                  Прошло: 02:47
+                </p>
+              </div>
+            </li>
+            <li class="today__details-card details-card">
+              <div class="details-card__values">
+                <h3 class="details-card__title">Закат</h3>
+                <img src="public/icons/details/sunset.svg" alt="Закат" class="details-card__icon">
+                <p class="details-card__value">16:37</p>
+              </div>
+              <div class="details-card__bar">
+                <p class="details-card__bar-description">
+                  Осталось: 05:08
+                </p>
+              </div>
+            </li>
+            <li class="today__details-card details-card">
+              <div class="details-card__values">
+                <h3 class="details-card__title">Сила ветра</h3>
+                <img src="public/icons/details/wind.svg" alt="Сила ветра" class="details-card__icon">
+                <p class="details-card__value">2 м/с</p>
+              </div>
+              <div class="details-card__bar">
+                <p class="details-card__bar-values">
+                  Северо-западный
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="slider"></section>
+    </main>
+    <footer class="footer">
+    </footer>
+  </div>
+
+  <script src="src/scripts/searchHandler.js"></script>
+</body>
+
+</html>

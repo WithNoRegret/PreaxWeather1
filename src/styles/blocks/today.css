@@ -1,0 +1,75 @@
+.today {
+  display: flex;
+  gap: 40px;
+}
+
+.today__info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 8px;
+
+  & .location-date-time {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+
+    & .location {
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+
+  & .temperature {
+    font-size: 112px;
+    font-weight: 700;
+  }
+
+  & .other {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+
+    & .weather {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    & .weather::before {
+      content: '';
+
+      display: inline-block;
+
+      aspect-ratio: 1;
+      height: 24px;
+
+      background: url('../../../public/icons/weather/cloudy.svg') no-repeat center center;
+    }
+  }
+}
+
+.today__details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.today__details-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.today__details-card {
+  width: 158px;
+  height: 196px;
+  background-color: var(--color-white-transparent);
+  border-radius: var(--border-radius);
+}

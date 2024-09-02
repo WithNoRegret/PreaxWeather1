@@ -10,6 +10,10 @@ body {
   background: url('../../public/background.jpg') no-repeat center center / cover fixed;
 }
 
+section {
+  padding: 32px;
+}
+
 button {
   cursor: pointer;
 
@@ -28,10 +32,15 @@ input {
 
 ul,
 ol {
+  padding: 0;
   list-style: none;
 }
 
 a {
   color: inherit;
   text-decoration: inherit;
+}
+
+main {
+  flex-grow: 1;
 }

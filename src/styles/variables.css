@@ -1,7 +1,11 @@
 :root {
   /* colors */
   --color-white: #f5f4f4;
+  --color-white-transparent: #f5f4f466;
   --color-grey-text: #393939;
   --color-black-text: #202020;
+  --color-input-hover: #dadada;
+
+  /* border radiuses */
   --border-radius: 8px;
 }

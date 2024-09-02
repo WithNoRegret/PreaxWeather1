@@ -1,29 +1,42 @@
-body {
-  min-height: 100vh;
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 
-  font-family: Raleway, sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  font-variant-numeric: lining-nums;
-  color: var(--color-white);
-
-  background: url('../../public/background.jpg') no-repeat center center / cover fixed;
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 section {
   padding: 32px;
 }
 
+body {
+  min-height: 100vh;
+  background: url('../../public/background.jpg') no-repeat center center / cover fixed;
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--color-white);
+
+  font-variant-numeric: lining-nums;
+}
+
 button {
-  cursor: pointer;
-
   padding: 0;
-
+  border: none;
   font: inherit;
   color: inherit;
-
   background-color: transparent;
-  border: none;
+  cursor: pointer;
 }
 
 input {
@@ -32,15 +45,10 @@ input {
 
 ul,
 ol {
-  padding: 0;
   list-style: none;
 }
 
 a {
-  color: inherit;
   text-decoration: inherit;
-}
-
-main {
-  flex-grow: 1;
+  color: inherit;
 }

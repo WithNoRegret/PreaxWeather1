@@ -9,6 +9,11 @@
   padding: 12px 16px;
   background-color: var(--color-white-transparent);
   border-radius: var(--border-radius);
+
+  &:hover,
+  &:active {
+    background-color: var(--color-input-hover);
+  }
 }
 
 .header__search-form {

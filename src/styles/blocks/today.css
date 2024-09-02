@@ -1,6 +1,6 @@
 .today {
   display: flex;
-  gap: 40px;
+  gap: 16px;
 }
 
 .today__info {
@@ -42,15 +42,11 @@
       justify-content: center;
     }
 
-    & .weather::before {
-      content: '';
-
+    & .weather-icon {
       display: inline-block;
 
       aspect-ratio: 1;
       height: 24px;
-
-      background: url('../../../public/icons/weather/cloudy.svg') no-repeat center center;
     }
   }
 }

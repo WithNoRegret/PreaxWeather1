@@ -36,14 +36,17 @@
         <section class="today">
           <div class="today__info">
             <div class="location-date-time">
-              <h2 class="location">Москва</h2>
-              <p class="date">Суббота, 06 января</p>
-              <p class="time">11:29</p>
+              <h2 class="location" id="location"></h2>
+              <p class="date" id="date"></p>
+              <p class="time" id="time"></p>
             </div>
-            <p class="temperature">-7°</p>
+            <p class="temperature" id="temperature"></p>
             <div class="other">
-              <p class="weather">Облачно</p>
-              <p class="feeling">Ощущается как -11°</p>
+              <div class="weather">
+                <img src="" alt="" height="24" width="24" class="weather-icon" id="weather-icon" />
+                <p id="weather-label"></p>
+              </div>
+              <p class="feel" id="feel"></p>
             </div>
           </div>
           <div class="today__details">
@@ -56,7 +59,7 @@
                     alt="Влажность"
                     class="details-card__icon"
                   />
-                  <p class="details-card__value">75 %</p>
+                  <p class="details-card__value" id="humidity"></p>
                 </div>
                 <div class="details-card__bar">
                   <svg
@@ -86,7 +89,7 @@
                     alt="Давление"
                     class="details-card__icon"
                   />
-                  <p class="details-card__value">761</p>
+                  <p class="details-card__value" id="pressure"></p>
                 </div>
                 <div class="details-card__bar">
                   <svg
@@ -119,7 +122,7 @@
                       </radialGradient>
                     </defs>
                   </svg>
-                  <p class="details-card__bar-description">Повышенное</p>
+                  <p class="details-card__bar-description" id="pressure-label"></p>
                 </div>
               </li>
               <li class="today__details-card details-card">
@@ -130,7 +133,7 @@
                     alt="Видимость"
                     class="details-card__icon"
                   />
-                  <p class="details-card__value">28 км</p>
+                  <p class="details-card__value" id="visibility"></p>
                 </div>
                 <div class="details-card__bar">
                   <svg
@@ -149,7 +152,7 @@
                     />
                     <circle cx="31" cy="4" r="4" fill="#F5F4F4" />
                   </svg>
-                  <p class="details-card__bar-description">Нормальная</p>
+                  <p class="details-card__bar-description" id="visibility-label"></p>
                 </div>
               </li>
               <li class="today__details-card details-card">
@@ -160,10 +163,10 @@
                     alt="Рассвет"
                     class="details-card__icon"
                   />
-                  <p class="details-card__value">8:42</p>
+                  <p class="details-card__value" id="sunrise"></p>
                 </div>
                 <div class="details-card__bar">
-                  <p class="details-card__bar-description">Прошло: 02:47</p>
+                  <p class="details-card__bar-description" id="sunrise-delta"></p>
                 </div>
               </li>
               <li class="today__details-card details-card">
@@ -174,10 +177,10 @@
                     alt="Закат"
                     class="details-card__icon"
                   />
-                  <p class="details-card__value">16:37</p>
+                  <p class="details-card__value" id="sunset"></p>
                 </div>
                 <div class="details-card__bar">
-                  <p class="details-card__bar-description">Осталось: 05:08</p>
+                  <p class="details-card__bar-description" id="sunset-delta"></p>
                 </div>
               </li>
               <li class="today__details-card details-card">
@@ -188,10 +191,10 @@
                     alt="Сила ветра"
                     class="details-card__icon"
                   />
-                  <p class="details-card__value">2 м/с</p>
+                  <p class="details-card__value" id="wind"></p>
                 </div>
                 <div class="details-card__bar">
-                  <p class="details-card__bar-values">Северо-западный</p>
+                  <p class="details-card__bar-values" id="wind-direction"></p>
                 </div>
               </li>
             </ul>

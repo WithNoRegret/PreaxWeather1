@@ -1,0 +1,48 @@
+{
+  "date_current": {
+    "day_of_the_week": "Суббота",
+    "date": "06 января",
+    "hours": "11",
+    "minutes": "29"
+  },
+  "location": "Москва",
+  "temperature": {
+    "real": -7,
+    "feel": -11
+  },
+  "weather": {
+    "label": "Облачно",
+    "link": "public/icons/weather/cloudy.svg"
+  },
+  "humidity": 75,
+  "pressure": {
+    "value": 761,
+    "label": "Повышенное"
+  },
+  "visibility": {
+    "value": 28,
+    "label": "Нормальная"
+  },
+  "wind": {
+    "value": 2,
+    "direction": "Северо-западный"
+  },
+  "sunrise": {
+    "hours": "8",
+    "minutes": "42",
+    "delta": {
+      "direction": "Прошло",
+      "hours": "02",
+      "minutes": "47"
+    }
+  },
+  "sunset": {
+    "hours": "16",
+    "minutes": "37",
+    "delta": {
+      "direction": "Осталось",
+      "hours": "05",
+      "minutes": "08"
+    }
+  }
+}

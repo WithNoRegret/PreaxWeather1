@@ -20,8 +20,8 @@
   4. Improve text rendering
 */
 body {
-  -webkit-font-smoothing: antialiased;
   line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 /*
@@ -57,4 +57,12 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
 }

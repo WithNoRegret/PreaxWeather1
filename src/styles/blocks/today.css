@@ -44,7 +44,6 @@
 
     & .weather-icon {
       display: inline-block;
-
       aspect-ratio: 1;
       height: 24px;
     }

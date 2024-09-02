@@ -1,38 +1,25 @@
-@font-face {
-  font-family: 'Raleway';
-  src: url('../fonts/Raleway-Bold.woff2') format('woff2');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Raleway';
-  src: url('../fonts/Raleway-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 body {
   min-height: 100vh;
-  background: url("../../public/background.jpg") no-repeat center center / cover fixed;
 
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
+  font-family: Raleway, sans-serif;
   font-size: 20px;
+  font-weight: 400;
+  font-variant-numeric: lining-nums;
   color: var(--color-white);
 
-  font-variant-numeric: lining-nums;
+  background: url('../../public/background.jpg') no-repeat center center / cover fixed;
 }
 
 button {
+  cursor: pointer;
+
   padding: 0;
-  border: none;
+
   font: inherit;
   color: inherit;
+
   background-color: transparent;
-  cursor: pointer;
+  border: none;
 }
 
 input {
@@ -45,6 +32,6 @@ ol {
 }
 
 a {
-  text-decoration: inherit;
   color: inherit;
+  text-decoration: inherit;
 }

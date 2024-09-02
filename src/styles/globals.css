@@ -1,26 +1,10 @@
-@font-face {
-  font-family: 'Raleway';
-  src: url('../fonts/Raleway-Bold.woff2') format('woff2');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Raleway';
-  src: url('../fonts/Raleway-Regular.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 section {
   padding: 32px;
 }
 
 body {
   min-height: 100vh;
-  background: url('../../public/background.jpg') no-repeat center center / cover fixed;
+  background: url('../../public/background.webp') no-repeat center center / cover fixed;
 
   font-family: 'Raleway', sans-serif;
   font-weight: 400;

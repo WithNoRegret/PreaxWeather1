@@ -7,6 +7,6 @@
   margin-top: 32px;
   margin-inline: auto;
 
-  backdrop-filter: blur(50px);
+  backdrop-filter: blur(25px);
   border-radius: var(--border-radius);
 }
